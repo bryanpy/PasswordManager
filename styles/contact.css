@@ -1,0 +1,88 @@
+body{
+    background: url("../Assets/BlackBack.jpg") no-repeat center center fixed; 
+}
+
+.content-seperator>h1{
+    color: var(--orange);
+    font-size: 4vw;
+    padding: 0px 90px;
+
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content-seperator>p{
+    color: var(--light-text);
+    padding: 20px 90px;
+    font-size: 1vw;
+    font-weight: normal;
+    text-align: justify;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.h-container{
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+    justify-content:center;
+}
+
+.v-container{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+.details-input{
+    width:15vw;
+    background-color: transparent;
+    color: var(--light-text);
+    padding: 5px 10px;
+    border-style:solid;
+    border-color: var(--light-text);
+    margin: 5px;
+}
+
+.details-input-wide{
+    width:32vw;
+    align-self: center;
+}
+
+#submit-button{
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1.2vw;
+    align-self: center;
+
+    background-color: var(--orange);
+    color: #0f0f12;
+    border-style:solid;
+    border-color: var(--orange);
+
+    transition: all 0.3s;
+}
+
+#submit-button:hover{
+    background-color: #0f0f12;
+    color: var(--orange);
+}
+
+#social-container{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 70px;
+    padding: 10px;
+    width: 20vw;
+}
+
+.social{
+    width:2.3vw;
+    filter: invert(100%);
+    margin-left: 10px;
+}
+
+.social:hover{
+    filter: invert(100%) opacity(50%);
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/common.css">
+    <link rel="stylesheet" href="../Styles/contact.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="/Scripts/contactus.js"></script>
+    <title>Contact</title>
+    <link rel="icon" type="image/x-icon" href="/Assets/Favicon.png"> 
+</head>
+<body>
+    <div id="header-container">
+        <img src="../Assets/Logo.png" alt="Logo" width="70vw" height="70vw" style="filter: invert();"  onclick="window.location = './home.html'"> 
+        <div id="header-button-container">
+            <button class="header-buttons" onclick="window.location = './home.html'">Home</button>
+            
+            <button class="header-buttons" onclick="window.location = './about.html'">About</button>
+        </div>
+    </div>
+    <div id="screen-container">
+        
+        <div class="content-seperator">
+            <h1>Contact Us</h1>
+            <p>
+                Well Hello, Nice to see you here, this is a project created for the Acuity competition held in Indian School Wadi Kabir. 
+                This website was created on the topic of Network security. It is designed on the vision Show less gain more. We would 
+                love to spread the future vision we have in mind about your password security and sensitive information. We are a team 
+                of two whose responsibilities vary from designing to actually coding the website. All members of the team had equal 
+                participation in the development of the website.
+            </p>
+            <div id="social-container">
+                <img onclick="window.location = 'https://www.linkedin.com/in/bryan-joe-3959a71a2/'" src="https://cdn-icons-png.flaticon.com/512/61/61109.png" alt="insta" class="social">
+                <img onclick="window.location = 'https://www.facebook.com/'" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAflBMVEUAAAD///+4uLiFhYUhISGZmZnh4eFSUlKurq5AQEDu7u739/fW1tbz8/P29vZ6enpZWVmnp6c4ODjJycmRkZGzs7NMTEwQEBAoKCjq6uoyMjLGxsZubm7T09Pc3NxjY2McHByAgIBFRUWVlZUXFxeLi4ssLCyfn59wcHANDQ2PSzMNAAAI4klEQVR4nO3dW0PiOhQF4HbkjggFUZH7Xf//HzwgetRkJ9lJVnZhputxHqZ8Utpcd7L8b09W9gdInkp4+6mEt59KePuphLefSnj7qYS3n0p4+6mEt59KePsREvYa96PpuHWsbx+39WNrPB3dN3oyl04uvB8fZ+1aRmU1XG7H96k/QELhw/zYfyFpv7ObHecJv89Ewt7obsDAfad5N+qk+SgphIvWYOXFu+S5WTQSfBq4cHJ8DdB95VCHI7HCTrGJ4F3SLibQz4QUzmfRvEuWI+CnwgmLmLtTzWsB+1wgYacO5F3yCHq2QoSdO7jvnDXECBD2HpP4ztkDjPHCbTLfOdvShX92SYGndsCfUoWLp8S+c54W5QnT/QB/Z1+ScM7pOGBSi2gChAvTvCFMuRMXLtqiwCwbhnaVA4VHYd85R0Hhw7IE4KlB/iAlXCDb2D55CXlvBAj/lOQ7J+D17y/E9yJ8Uk8v7JcKzLJ+aqHfCFqKNJMKu9JvQSrtbjph71C27iMHr16jj7BDD87Lp+ZD9BBeDdCPyBdeyS16yYE/0cEWdstqyNB5Zbfg2MJh2SYlQ7SwnLa2LUusULa7ywuzU8wTltEddIfXYWQJp2VbDJmihB30J2vu60VrfErrM8VHWt5PM85rkSNEPkZX/an5Vdb0/d84D1SGENhfWtrvK28hpy/lFuK69APXcJm/kNHpdwpxP0L3hwkQun+KTmH8xPwlbcZTIUS4iRWiRmUGnG5riNA5cuMQNkBA3tBDkDBzrE9xCEGzZzUWMFD4FCMsMEDXnzlOmNnXbViFPRCQO8gZKMys3WGr8A0DfGUCg4VvocI5Bsgfig8VZvNAIegxw/4Kw4W2h41FiGqu8RdwBQttt4lFiBo85A9RhwstryOzsAUCeswzhAuzVoAQtRTIY5VhhHDnL0S97Llv+0ih+Q9pFMJGuD1mimKEB18hrN/rM90XIzQ+Tk1C2II12zhDMdi0f2TzHHMh0zvRIEQ1Z2xr0nrgmRBDw8YgxA3im4dto+5JIoZhflqI6lRklhfVAneNz9BdDFoIHMU3tqdgr6P/Q98utBC4rtIo3OOu8ZkXvnAEvKxRmGA6i1yFSgqRq4IkheSbiRJ2kYt/JYUvVPuJEiJvUlEheZtSQujSNVEhdZtSwqjGkxpR4TNPeA+9qKgwI2a3CCF2AamskBiZJYTYBrGskJgU1oXANuk5skKibaoLwQsvhIX6NLouBLcXjcI19jqf0bujuhAw6Ts71r+yNW4gmG7rSo6AXqk+JawJO4BRxLFJ5QhgL9xOm0zXhIjxC/PwrD2I3e7aWIYmRHRMQ4WIcQ3t2poQ0SgNFSJ2AmhNU02I2FARKHxA9NoGLmFvBbhKoHACuHS2Ut/5qhBylUAhZmmLWjdEFUKGggOFmE6N2r1QhZBZw0AhZq5EvbgqhFRICBRium1qFQZVCGktBgoxbfG1QwjZfRcoxCzfUV8XqhCy4jlQiNnbqHaCVSFkFCpQiBlcUEejVCHkImHCB8i1M010PULU8IldiLlKmBC1WldptilCSKMtUIgaIFKabYoQ83cME6IWYSkLeBQhZuo5TIgaiVZGhhQhpvFbb3zHuH630/idCWpCSGl6K0LcKpOvGEel0owmZtpITZK79GeER4Qz112KemJ/R15of9Jg3hY/Iy+0vy3gmylLECpjwoqwC7+evFBZrpCkXfoz8kJV9M8J4cUvxIXqYmFVCC/1KC5UV9KqQtBWp++IC9VNUKoQvmJQXKjOAqtC+KpPcaG6LUEVwgtEiAvVtQqqEN4wFRe6ZmbgzTZxoTqRr82Qovbff0VaqC3G0ISo2vhfkRbOnEJ0eW5poVYAXBNCFwhn8kJtmbAmRD9MpYXaZkB91Rd4N5KwUN9WrQvBjxphofagIYRj7CWFhfrgpS4EDygKC/WlkMQqaOwlhYUER/8nbKVgWSGx4YIQYqtZywqJqxFC1Gyz8ZoJhUTNT2rPDLTes6hQW5hoEEL7+aJCauKSEkInL0SFVMU0cocl8jaVFFI3KS1EzaifIykkZ2NJIXJjkKSQnFGn93IDx4UFhXRBLFoI3IIoKKRLaxqqRuD2OssJ6e34JiHuWSMnNKziMQi7sOPUxIQ7Q6kfU30a2IFjYsJHw3VMQli7RkxoOp/VWCcK1UuUEhprGRmFqC9RSmg8Ytdcrw30JQoJzeWozELQLJSQ0FyH2VI3EfMRZISWMyAtwg5kZ4KI8NlSSttWvxTS1xcR2mozWqvsIqYwJITWAwSsQsRMm4TQekqpvdo1oASAgNB+4oxdCOjsCwjtFfsdNdnjJ6LSCx0VHFwnB0QPuyUXkgNsHsLo5mlyobFByhRGz9OkFjrLobtPYYkcd0sstBacZwojazmkFR7cB8wxzgqKm/ZOW/uScUAw57ynqFfGrmYIol3PKfXDEabbhBWZNefDs4T49e2QOI5f8RJe2QGWlxx4tdB5wnwCrRYJybPrVe8nBJeLRMR1xJmv8OrOQGSdfeglLPXQeD38Y+T5QvSSvqh41LzzEEKn9+Pisx3eR3g1N6pX1UIv4ZU8bvi/QX8hfJ17SKwja9HCfPFesu+d+x4MFeadcg/oHnqcGx8oLPeIbu5h3HFC3By/d0xz9WhhaY9UdkstWljOj3HI7ExAhClOGHHFMgmaRJiPYGuKWHn3fAsChHkXvVPRlqXH2WYw4elrhBdgMOQl6BEDEOZdmV/jPvwLjBWeGnHQnQtkmh7HCyYQnm5V5LE7emoxNyhGmOdFup9jzeMAzITCvNtKNNZYRP0AP4MQnoxFgrcjxIcSnjJFlIz/TtuvI28JTJjnc9zGxbfgFoweoDDPey1Ei3xYePdybYEKT2k8xh0FvdszJj29ghaestiH/iTbe99BGEYSCE+ZjN9WnrrVrBXZeDEkjfCU7qTV574md/2igXk1EEkmvGQ+Xm9sM/a1zXo8Sob7SGLhR3qL+bi+ni2bT5v28HXY3jw1l7N1fTxaQB+ahkgIf6bbTfuN6ZEWyqcS3n4q4e2nEt5+/n7hf+Bkl1eK4fVUAAAAAElFTkSuQmCC" alt="insta" class="social">
+                <img onclick="window.location = 'https://mail.google.com/mail/u/0/#inbox'" src="https://freepngimg.com/save/66594-bookmark-screen-logo-home-gmail-email-icon/1600x1600" alt="insta" class="social">
+                <img onclick="window.location = 'https://www.instagram.com/bryangamedev/'" src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt="insta" class="social">
+            </div>
+        </div>
+        <div class="content-seperator">
+            <h1 style="color:var(--text);margin-left: 35px;font-size:2vw;">Enter Info</h1>
+            <div class="h-container">
+                <div class="v-container">
+                    <input type="text" placeholder="Enter your name" class="details-input" id="name">
+                    <input type="text" placeholder="Enter valid email id" class="details-input" id="email">
+                </div>
+                <div class="v-container">
+                    <input type="text" placeholder="Enter subject" class="details-input" id="subject">
+                    <input type="text" placeholder="Enter valid phone no" class="details-input" id="phone">
+                </div>
+            </div>
+            <textarea id="message" type="text" placeholder="Enter your message" class="details-input details-input-wide" rows="6" ></textarea>
+            <button id="submit-button" onclick="submit()">Submit</button>
+        </div>
+    </div>
+</body>
+</html>

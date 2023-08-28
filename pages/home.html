@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/home.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js" integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+</head>
+<body style="margin-top: 7vh;">
+    <div id="header-container">
+        <img src="../Assets/Logo.png" alt="Logo" width="70vw" height="70vw" style="filter: invert();"  onclick="window.location = './home.html'"> 
+        <div id="header-button-container">
+            <button class="header-buttons" onclick="window.location = './home.html'">Home</button>
+            
+            <button class="header-buttons" onclick="window.location = './about.html'">About</button>
+        </div>
+    </div>
+    <div id="screen-container">
+        <div class="content-seperator">
+            <div id="items-container">
+            </div>
+        </div>
+        <div class="content-seperator" id="new-record-container" style="overflow-y: scroll;overflow-x: hidden">
+            <div id="new-record-title">
+                <span id="new-record-title-text" style="font-size:2vw;">New Record</span>
+            </div>
+            <br><br>
+            <span>Title (Required)</span>
+            <input type="text" placeholder="Title" id="input-title" class="new-record-input">
+            <br><br>
+            <span>Username/Email</span>
+            <input type="text" placeholder="Username" id="input-user" class="new-record-input">
+            <br>
+            <span>Password (Required)</span>
+            <div id="password-input-container">
+                <input type="password" placeholder="Password" id="input-password" class="new-record-input">
+                <button id="new-record-show-password" onclick="toggleShowPassword()">👁</button>
+                <button id="new-record-auto-password">Auto</button>
+            </div>
+            <span id="password-feedback" style="margin-top: 5px;"></span>
+            <br>
+            <span>Website Address</span>
+            <input type="text" placeholder="Website Address" id="input-website" class="new-record-input">
+            <br>
+            <span>Note</span>
+            <textarea placeholder="Note" id="input-note" class="new-record-input" rows="4" cols="50"></textarea>
+
+            <div class="h-container" style="margin-top: 30px;justify-content: space-between;">
+                <div class="h-container">
+                    <button class="normal-buttons cancel-button" onclick="clearSelection()">Cancel</button>
+                    <button class="normal-buttons" onclick="addPassword()">Save</button>
+                </div>
+                <button id="delete-button" onclick="deletePassword()">Delete</button>
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/firebase.js"></script>
+    <script src="../scripts/home.js"></script>
+</body>
+</html>
